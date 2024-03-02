@@ -61,7 +61,7 @@ export const Tab = ({ currentTab }) => {
   return (
     <>
       <div className={classes.container}>
-        <div 
+        {currentTab !== 'home' && <div 
           className={classes.imageContainer}
           onMouseEnter={() => setImageHovered(true)}
           onMouseLeave={() => setImageHovered(false)}
@@ -71,7 +71,7 @@ export const Tab = ({ currentTab }) => {
             className={classes.image}
             alt="Felipe's face"
           />
-        </div>
+        </div>}
         <div className={classes.content}>
           {currentTab === 'home' && <Home />}
           {currentTab === 'cv' && <CurriculumVitae />}

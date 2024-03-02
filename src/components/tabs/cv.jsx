@@ -11,13 +11,13 @@ const handleRedirectToLinkedIn = () => {
 export const CurriculumVitae = () => {
   return (
     <div className='w-full max-w-[550px]'>
-      <p className='ml-10 text-xl font-bold'>Experience</p>
+      <p className='ml-10 text-xl font-bold'>Work Experience</p>
       <div className='flex justify-between items-start m-10 p-3 rounded-xl bg-[#F4D35E]'>
         <div className='flex'>
           <img src={DSLogo} height={52} width={52} alt="DataScope logo" />
           <div className='flex flex-col items-start ml-3'>
             <h2 className='text-lg font-bold'>DataScope</h2>
-            <p>Frontend Engineer</p>
+            <p>Software Engineer</p>
           </div>
         </div>
         <div className='flex h-full items-center'>
