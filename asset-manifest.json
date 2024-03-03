@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.2cf79691.css",
-    "main.js": "/static/js/main.d7df1786.js",
+    "main.css": "/static/css/main.4b5826ab.css",
+    "main.js": "/static/js/main.7e186f83.js",
     "static/js/592.debac2b6.chunk.js": "/static/js/592.debac2b6.chunk.js",
     "static/media/flashing_lights.mp3": "/static/media/flashing_lights.83195061ea7b2b59077e.mp3",
     "static/media/cv-felipe.pdf": "/static/media/cv-felipe.7c8081ef33545dc00f9e.pdf",
     "static/media/yop.jpeg": "/static/media/yop.0b11997901785fdbc515.jpeg",
+    "static/media/Spotify_logo.png": "/static/media/Spotify_logo.916639c3f332508ba2af.png",
+    "static/media/rotter_y_krauss_logo.png": "/static/media/rotter_y_krauss_logo.4e8cb539e7a4a5805e12.png",
+    "static/media/Aramark_logo.png": "/static/media/Aramark_logo.611aa41a7b4aefc30b2a.png",
     "static/media/ds-logo.png": "/static/media/ds-logo.1f132f54c48d264bea53.png",
+    "static/media/opgg_logo.png": "/static/media/opgg_logo.0b728710240ee02e6bd1.png",
     "static/media/pdf-logo.png": "/static/media/pdf-logo.4360a711cab21a8e72b1.png",
     "static/media/linkedin-logo.png": "/static/media/linkedin-logo.307e13c8dbbdafcf2f96.png",
     "index.html": "/index.html",
-    "main.2cf79691.css.map": "/static/css/main.2cf79691.css.map",
-    "main.d7df1786.js.map": "/static/js/main.d7df1786.js.map",
+    "main.4b5826ab.css.map": "/static/css/main.4b5826ab.css.map",
+    "main.7e186f83.js.map": "/static/js/main.7e186f83.js.map",
     "592.debac2b6.chunk.js.map": "/static/js/592.debac2b6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cf79691.css",
-    "static/js/main.d7df1786.js"
+    "static/css/main.4b5826ab.css",
+    "static/js/main.7e186f83.js"
   ]
 }
