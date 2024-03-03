@@ -13,6 +13,7 @@ const useStyles = createUseStyles((theme) => ({
     to: { transform: 'rotate(360deg)' }
   },
   imageContainer: {
+    gridColumn: '1 / 2',
     height: '40vmin',
     borderRadius: '50%',
   },
@@ -24,15 +25,15 @@ const useStyles = createUseStyles((theme) => ({
     },
   },
   container: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    columnGap: '20px',
+    display: 'grid',
     marginTop: '100px',
+    gridTemplateColumns: 'repeat(3, 1fr)',
+    gap: '10px',
+    gridAutoRows: 'minmax(100px, auto)',
   },
   content: {
+    gridColumn: '2 / 4',
     width: '50vw',
-    height: '350px',
     minHeight: '200px',
     display: 'flex',
     flexDirection: 'column',
