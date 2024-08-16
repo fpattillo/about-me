@@ -6,9 +6,9 @@ export const Button = ({
   startIcon,
   endIcon,
   text,
-  fullWidth,
+  responsive,
 }) => {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 640);
 
   useEffect(() => {
     const handleResize = () => setIsSmallScreen(window.innerWidth < 640);
@@ -21,9 +21,7 @@ export const Button = ({
     <button
       className={`${
         backgroundColor ? `bg-[${backgroundColor}]` : "bg-white"
-      } text-black rounded-lg p-2 flex items-center ${
-        fullWidth ? "w-full" : isSmallScreen ? "w-auto" : ""
-      } max-h-[56px] hover:bg-slate-100 transition-all duration-300`}
+      } text-black rounded-lg p-2 flex items-center w-full max-h-[56px] hover:bg-slate-100 transition-all duration-300`}
       onClick={onClick}
     >
       {startIcon && (
@@ -31,10 +29,12 @@ export const Button = ({
           src={startIcon}
           height={40}
           width={40}
-          className="sm:mr-3 sm:justify-self-start"
+          className={
+            (!isSmallScreen || !responsive) && "mr-3 justify-self-start"
+          }
         />
       )}
-      {!isSmallScreen && <span>{text}</span>}
+      {(!isSmallScreen || !responsive) && <span>{text}</span>}
       {endIcon && <img src={endIcon} height={40} width={40} className="ml-3" />}
     </button>
   );

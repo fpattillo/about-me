@@ -16,6 +16,7 @@ export const ListSection = ({ title, subtitle, description, buttons }) => {
               startIcon={button.startIcon}
               fullWidth
               onClick={button.onClick}
+              responsive
             />
           ))}
         </div>
