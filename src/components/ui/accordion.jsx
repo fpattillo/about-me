@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles((theme) => ({
@@ -30,12 +30,23 @@ const useStyles = createUseStyles((theme) => ({
   role: {
     fontStyle: "italic",
   },
+  hiddenContentWrapper: {
+    maxHeight: 0,
+    overflow: "hidden",
+    transition: "max-height 0.2s ease", // Faster closing transition
+  },
+  expandedContentWrapper: {
+    maxHeight: "1000px", // Set to a value that accommodates the maximum content height
+    transition: "max-height 0.5s ease", // Slower opening transition
+  },
 }));
 
 export const CVAccordion = ({ company, role, period, logo, description }) => {
   const [hovered, setHovered] = useState(false);
   const [expanded, setExpanded] = useState(false);
   const classes = useStyles({ hovered });
+  const contentRef = useRef(null);
+
   return (
     <div
       className={classes.accordion}
@@ -67,11 +78,16 @@ export const CVAccordion = ({ company, role, period, logo, description }) => {
         </div>
       </div>
       {/* accordion hidden content */}
-      {expanded && (
+      <div
+        ref={contentRef}
+        className={`${classes.hiddenContentWrapper} ${
+          expanded ? classes.expandedContentWrapper : ""
+        }`}
+      >
         <div className="p-6">
           <p>{description}</p>
         </div>
-      )}
+      </div>
     </div>
   );
 };

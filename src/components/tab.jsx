@@ -113,7 +113,7 @@ export const Tab = ({ currentTab }) => {
           </div>
         </div>
         <div className={classes.content}>
-          {currentTab === "cv" && <CurriculumVitae />}
+          {currentTab === "CV" && <CurriculumVitae />}
           {currentTab === "hobbies" && <Hobbies />}
           {currentTab === "studies" && <Studies />}
         </div>

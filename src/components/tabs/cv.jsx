@@ -15,6 +15,23 @@ export const CurriculumVitae = () => {
   return (
     <div className="w-full max-w-[550px]">
       <p className="ml-10 text-xl font-bold">Work Experience</p>
+      <div className="flex justify-between gap-x-3 p-5">
+        <Button
+          text={"Connect with me!"}
+          startIcon={LinkedInLogo}
+          fullWidth
+          onClick={handleRedirectToLinkedIn}
+        />
+        <a
+          href={CVFelipe}
+          download
+          target="_blank"
+          rel="noreferrer"
+          className="w-full"
+        >
+          <Button text={"Full CV"} startIcon={PDFLogo} fullWidth />
+        </a>
+      </div>
       <div className="h-[400px] ">
         <CVAccordion
           company={"DataScope"}
@@ -43,23 +60,6 @@ export const CurriculumVitae = () => {
             "Selling and recommending sunglasses, and helping with the inventory."
           }
         />
-      </div>
-      <div className="flex justify-between gap-x-3 p-5">
-        <Button
-          text={"Connect with me!"}
-          startIcon={LinkedInLogo}
-          fullWidth
-          onClick={handleRedirectToLinkedIn}
-        />
-        <a
-          href={CVFelipe}
-          download
-          target="_blank"
-          rel="noreferrer"
-          className="w-full"
-        >
-          <Button text={"Full CV"} startIcon={PDFLogo} fullWidth />
-        </a>
       </div>
     </div>
   );

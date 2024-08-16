@@ -22,25 +22,31 @@ export const Studies = () => {
       >
         <ListSection
           title={"Industrial Engineering w/ Diploma in Software Engineering"}
-          subtitle={"Pontificia Universidad Católica de Chile"}
+          subtitle={"Pontificia Universidad Católica de Chile 🇨🇱"}
           description={"2017 - 2023"}
           buttons={[]}
         />
         <ListSection
           title={"Exchange Program"}
-          subtitle={"University of Groningen"}
+          subtitle={"University of Groningen 🇳🇱"}
           description={"Aug 2022 - Jan 2023"}
           buttons={[]}
         />
         <ListSection
-          title={"High School"}
-          subtitle={"Colegio The Newland School, Santiago, Chile"}
+          title={"School"}
+          subtitle={"Colegio The Newland School, Santiago, Chile 🇨🇱"}
           description={"2009 - 2016"}
           buttons={[]}
         />
         <ListSection
+          title={"Secondary School"}
+          subtitle={"South Island School, Hong Kong 🇭🇰"}
+          description={"2009 - 2010"}
+          buttons={[]}
+        />
+        <ListSection
           title={"Primary School"}
-          subtitle={"Quarry Bay School, Hong Kong"}
+          subtitle={"Quarry Bay School, Hong Kong 🇭🇰"}
           description={"2003 - 2008"}
           buttons={[]}
         />

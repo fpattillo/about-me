@@ -4,7 +4,7 @@ import { Navbar } from "./components/navbar";
 import { Tab } from "./components/tab";
 
 function App() {
-  const [tab, setTab] = useState("cv");
+  const [tab, setTab] = useState("CV");
   return (
     <div className="flex h-screen justify-center items-center">
       <div className="flex flex-col w-10/12 justify-start items-center h-full">
