@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf94dcc5.css",
-    "main.js": "/static/js/main.369d4f04.js",
-    "static/js/453.e307611a.chunk.js": "/static/js/453.e307611a.chunk.js",
-    "static/media/flashing_lights.mp3": "/static/media/flashing_lights.83195061ea7b2b59077e.mp3",
-    "static/media/cv-felipe.pdf": "/static/media/cv-felipe.7c8081ef33545dc00f9e.pdf",
-    "static/media/yop.jpeg": "/static/media/yop.0b11997901785fdbc515.jpeg",
-    "static/media/Spotify_logo.png": "/static/media/Spotify_logo.916639c3f332508ba2af.png",
-    "static/media/rotter_y_krauss_logo.png": "/static/media/rotter_y_krauss_logo.4e8cb539e7a4a5805e12.png",
-    "static/media/Aramark_logo.png": "/static/media/Aramark_logo.611aa41a7b4aefc30b2a.png",
-    "static/media/ds-logo.png": "/static/media/ds-logo.1f132f54c48d264bea53.png",
-    "static/media/opgg_logo.png": "/static/media/opgg_logo.0b728710240ee02e6bd1.png",
-    "static/media/pdf-logo.png": "/static/media/pdf-logo.4360a711cab21a8e72b1.png",
-    "static/media/linkedin-logo.png": "/static/media/linkedin-logo.307e13c8dbbdafcf2f96.png",
-    "index.html": "/index.html",
-    "main.bf94dcc5.css.map": "/static/css/main.bf94dcc5.css.map",
-    "main.369d4f04.js.map": "/static/js/main.369d4f04.js.map",
-    "453.e307611a.chunk.js.map": "/static/js/453.e307611a.chunk.js.map"
+    "main.css": "/about-me/static/css/main.bf94dcc5.css",
+    "main.js": "/about-me/static/js/main.270e8ab7.js",
+    "static/js/453.0fbe92db.chunk.js": "/about-me/static/js/453.0fbe92db.chunk.js",
+    "static/media/flashing_lights.mp3": "/about-me/static/media/flashing_lights.83195061ea7b2b59077e.mp3",
+    "static/media/cv-felipe.pdf": "/about-me/static/media/cv-felipe.7c8081ef33545dc00f9e.pdf",
+    "static/media/yop.jpeg": "/about-me/static/media/yop.0b11997901785fdbc515.jpeg",
+    "static/media/Spotify_logo.png": "/about-me/static/media/Spotify_logo.916639c3f332508ba2af.png",
+    "static/media/rotter_y_krauss_logo.png": "/about-me/static/media/rotter_y_krauss_logo.4e8cb539e7a4a5805e12.png",
+    "static/media/Aramark_logo.png": "/about-me/static/media/Aramark_logo.611aa41a7b4aefc30b2a.png",
+    "static/media/ds-logo.png": "/about-me/static/media/ds-logo.1f132f54c48d264bea53.png",
+    "static/media/opgg_logo.png": "/about-me/static/media/opgg_logo.0b728710240ee02e6bd1.png",
+    "static/media/pdf-logo.png": "/about-me/static/media/pdf-logo.4360a711cab21a8e72b1.png",
+    "static/media/linkedin-logo.png": "/about-me/static/media/linkedin-logo.307e13c8dbbdafcf2f96.png",
+    "index.html": "/about-me/index.html",
+    "main.bf94dcc5.css.map": "/about-me/static/css/main.bf94dcc5.css.map",
+    "main.270e8ab7.js.map": "/about-me/static/js/main.270e8ab7.js.map",
+    "453.0fbe92db.chunk.js.map": "/about-me/static/js/453.0fbe92db.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf94dcc5.css",
-    "static/js/main.369d4f04.js"
+    "static/js/main.270e8ab7.js"
   ]
 }
