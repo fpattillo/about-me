@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/about-me/static/css/main.81e7605c.css",
-    "main.js": "/about-me/static/js/main.094a66e0.js",
+    "main.css": "/about-me/static/css/main.73e9825c.css",
+    "main.js": "/about-me/static/js/main.a5825602.js",
     "static/js/453.0fbe92db.chunk.js": "/about-me/static/js/453.0fbe92db.chunk.js",
     "static/media/flashing_lights.mp3": "/about-me/static/media/flashing_lights.83195061ea7b2b59077e.mp3",
     "static/media/emirates.jpeg": "/about-me/static/media/emirates.527eb88f153eefd684ce.jpeg",
@@ -15,12 +15,12 @@
     "static/media/pdf-logo.png": "/about-me/static/media/pdf-logo.4360a711cab21a8e72b1.png",
     "static/media/linkedin-logo.png": "/about-me/static/media/linkedin-logo.307e13c8dbbdafcf2f96.png",
     "index.html": "/about-me/index.html",
-    "main.81e7605c.css.map": "/about-me/static/css/main.81e7605c.css.map",
-    "main.094a66e0.js.map": "/about-me/static/js/main.094a66e0.js.map",
+    "main.73e9825c.css.map": "/about-me/static/css/main.73e9825c.css.map",
+    "main.a5825602.js.map": "/about-me/static/js/main.a5825602.js.map",
     "453.0fbe92db.chunk.js.map": "/about-me/static/js/453.0fbe92db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81e7605c.css",
-    "static/js/main.094a66e0.js"
+    "static/css/main.73e9825c.css",
+    "static/js/main.a5825602.js"
   ]
 }
