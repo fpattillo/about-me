@@ -13,6 +13,39 @@ export const Studies = () => {
     else setFullyScrolledDown(false);
   };
 
+  const studySections = [
+    {
+      title: "Industrial Engineering w/ Diploma in Software Engineering",
+      subtitle: "Pontificia Universidad Católica de Chile 🇨🇱",
+      description: "2017 - 2023",
+      buttons: [],
+    },
+    {
+      title: "Exchange Program",
+      subtitle: "University of Groningen 🇳🇱",
+      description: "Aug 2022 - Jan 2023",
+      buttons: [],
+    },
+    {
+      title: "School",
+      subtitle: "Colegio The Newland School, Santiago, Chile 🇨🇱",
+      description: "2009 - 2016",
+      buttons: [],
+    },
+    {
+      title: "Secondary School",
+      subtitle: "South Island School, Hong Kong 🇭🇰",
+      description: "2009 - 2010",
+      buttons: [],
+    },
+    {
+      title: "Primary School",
+      subtitle: "Quarry Bay School, Hong Kong 🇭🇰",
+      description: "2003 - 2008",
+      buttons: [],
+    },
+  ];
+
   return (
     <div className="bg-[#F4D35E] relative flex flex-col justify-center items-center rounded-xl w-[650px]">
       <div
@@ -20,36 +53,15 @@ export const Studies = () => {
         className="p-5 flex flex-col gap-y-7 max-h-[400px] overflow-y-scroll w-full"
         onScroll={handleCheckScroll}
       >
-        <ListSection
-          title={"Industrial Engineering w/ Diploma in Software Engineering"}
-          subtitle={"Pontificia Universidad Católica de Chile 🇨🇱"}
-          description={"2017 - 2023"}
-          buttons={[]}
-        />
-        <ListSection
-          title={"Exchange Program"}
-          subtitle={"University of Groningen 🇳🇱"}
-          description={"Aug 2022 - Jan 2023"}
-          buttons={[]}
-        />
-        <ListSection
-          title={"School"}
-          subtitle={"Colegio The Newland School, Santiago, Chile 🇨🇱"}
-          description={"2009 - 2016"}
-          buttons={[]}
-        />
-        <ListSection
-          title={"Secondary School"}
-          subtitle={"South Island School, Hong Kong 🇭🇰"}
-          description={"2009 - 2010"}
-          buttons={[]}
-        />
-        <ListSection
-          title={"Primary School"}
-          subtitle={"Quarry Bay School, Hong Kong 🇭🇰"}
-          description={"2003 - 2008"}
-          buttons={[]}
-        />
+        {studySections.map((section, index) => (
+          <ListSection
+            key={`study-section-${index}`}
+            title={section.title}
+            subtitle={section.subtitle}
+            description={section.description}
+            buttons={section.buttons}
+          />
+        ))}
       </div>
       {!fullyScrolledDown && (
         <div

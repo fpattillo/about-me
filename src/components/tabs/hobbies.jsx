@@ -4,9 +4,11 @@ import FutbinLogo from "../../assets/futbin-logo.png";
 import { ListSection } from "../listSection";
 import { IoArrowDown } from "react-icons/io5";
 import { useState } from "react";
+import Emirates from "../../assets/emirates.jpeg";
 
 export const Hobbies = () => {
   const [fullyScrolledDown, setFullyScrolledDown] = useState(false);
+  const [openPictureModal, setOpenPictureModal] = useState(false);
 
   const handleRedirectToSpotify = () => {
     window.open(
@@ -55,54 +57,89 @@ export const Hobbies = () => {
     },
   ];
 
-  return (
-    <div className="bg-[#F4D35E] relative flex flex-col justify-center items-center rounded-xl w-[650px]">
-      <div
-        id="hobby-list"
-        className="p-5 flex flex-col gap-y-7 max-h-[400px] overflow-y-scroll"
-        onScroll={handleCheckScroll}
+  const footballDescription = (
+    <span>
+      I've supported Arsenal since I can remember (
+      <span
+        className="underline text-sky-700 hover:cursor-pointer"
+        onClick={() => setOpenPictureModal(true)}
       >
-        <ListSection
-          title={"Music"}
-          description={
-            "I'm really passionate about music. I love discovering new bands, finding joy in multiple genres and making playlists to suit every mood and style. Also, I play the guitar (very casually)."
-          }
-          buttons={musicButtons}
-        />
-        <ListSection
-          title={"Video Games"}
-          description={
-            "I've loved video games all my life. My favorite game of all time is Ocarina of Time. Right now I mainly play League of Legends and FIFA."
-          }
-          buttons={videoGamesButtons}
-        />
-        <ListSection
-          title={"Football"}
-          description={
-            "I've supported Arsenal since I can remember. I also play football every week. I usually play centre back, however I also really enjoy playing as a 6, and I can fill in at left back as well."
-          }
-          buttons={[]}
-        />
-        <ListSection
-          title={"Gym"}
-          description={
-            "I try to go to the gym at least 3 times a week, and I mostly do weightlifting. I really enjoy seeing progress and feeling stronger. Also, it really helps reduce stress."
-          }
-          buttons={[]}
-        />
-      </div>
-      {!fullyScrolledDown && (
+        here's a picture of me at the Emirates
+      </span>
+      ). I also play football every week. I either play as a defensive
+      midfielder or a center back.
+    </span>
+  );
+
+  const hobbySections = [
+    {
+      title: "Music",
+      description:
+        "I'm really passionate about music. I love discovering new bands, finding joy in multiple genres and making playlists to suit every mood and style. Also, I play the guitar (very casually).",
+      buttons: musicButtons,
+    },
+    {
+      title: "Video Games",
+      description:
+        "I've loved video games all my life. My favorite game of all time is Ocarina of Time. Right now I mainly play League of Legends and FIFA.",
+      buttons: videoGamesButtons,
+    },
+    {
+      title: "Football",
+      description: footballDescription,
+      buttons: [],
+    },
+    {
+      title: "Gym",
+      description:
+        "I try to go to the gym at least 3 times a week, and I mostly do weightlifting. I really enjoy seeing progress and feeling stronger. Also, it really helps reduce stress.",
+      buttons: [],
+    },
+  ];
+
+  return (
+    <>
+      <div className="bg-[#F4D35E] relative flex flex-col justify-center items-center rounded-xl w-[650px]">
         <div
-          className="bg-white p-2 rounded-3xl absolute bottom-2"
-          onClick={() =>
-            document
-              .getElementById("hobby-list")
-              .scrollTo({ top: 1000, behavior: "smooth" })
-          }
+          id="hobby-list"
+          className="p-5 flex flex-col gap-y-7 max-h-[400px] overflow-y-scroll"
+          onScroll={handleCheckScroll}
         >
-          <IoArrowDown size={24} />
+          {hobbySections.map((section, index) => (
+            <ListSection
+              key={`hobby-section-${index}`}
+              title={section.title}
+              description={section.description}
+              buttons={section.buttons}
+            />
+          ))}
+        </div>
+        {!fullyScrolledDown && (
+          <div
+            className="bg-white p-2 rounded-3xl absolute bottom-2"
+            onClick={() =>
+              document
+                .getElementById("hobby-list")
+                .scrollTo({ top: 1000, behavior: "smooth" })
+            }
+          >
+            <IoArrowDown size={24} />
+          </div>
+        )}
+      </div>
+      {openPictureModal && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
+          onClick={() => setOpenPictureModal(false)}
+        >
+          <img
+            src={Emirates}
+            alt="Me at the Emirates"
+            className="max-h-[80%] max-w-[80%] rounded-xl"
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
       )}
-    </div>
+    </>
   );
 };
