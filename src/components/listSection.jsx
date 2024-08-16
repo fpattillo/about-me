@@ -9,7 +9,7 @@ export const ListSection = ({ title, subtitle, description, buttons }) => {
         <p>{description}</p>
       </div>
       {buttons.length > 0 && (
-        <div className="w-full h-full max-w-[180px] ml-4 flex flex-col gap-y-3">
+        <div className="max-sm:min-w-[56px] sm:w-full h-full max-w-[180px] ml-4 flex flex-col gap-y-3">
           {buttons.map((button) => (
             <Button
               text={button.text}

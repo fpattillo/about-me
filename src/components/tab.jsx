@@ -33,6 +33,12 @@ const useStyles = createUseStyles((theme) => ({
     gridTemplateColumns: "repeat(3, 1fr)",
     gap: "10px",
     gridAutoRows: "minmax(100px, auto)",
+    "@media (max-width: 1280px)": {
+      // switch to vertical layout on smaller screens
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+    },
   },
   content: {
     gridColumn: "2 / 4",
@@ -42,6 +48,10 @@ const useStyles = createUseStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    "@media (max-width: 1280px)": {
+      width: "100%",
+    },
+    padding: "20px",
   },
   overlay: {
     position: "absolute",

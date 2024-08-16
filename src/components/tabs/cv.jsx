@@ -13,7 +13,7 @@ const handleRedirectToLinkedIn = () => {
 
 export const CurriculumVitae = () => {
   return (
-    <div className="w-full max-w-[550px]">
+    <div className="w-full max-w-[550px] max-lg:w-full">
       <p className="ml-10 text-xl font-bold">Work Experience</p>
       <div className="flex justify-between gap-x-3 p-5">
         <Button

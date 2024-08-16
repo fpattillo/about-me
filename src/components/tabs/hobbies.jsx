@@ -99,7 +99,7 @@ export const Hobbies = () => {
 
   return (
     <>
-      <div className="bg-[#F4D35E] relative flex flex-col justify-center items-center rounded-xl w-[650px]">
+      <div className="bg-[#F4D35E] relative flex flex-col justify-center items-center rounded-xl w-[650px] max-lg:w-full max-lg:p-[20px]">
         <div
           id="hobby-list"
           className="p-5 flex flex-col gap-y-7 max-h-[400px] overflow-y-scroll"
