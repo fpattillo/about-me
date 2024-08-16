@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/about-me/static/css/main.33e825e4.css",
-    "main.js": "/about-me/static/js/main.4c62fdc8.js",
+    "main.css": "/about-me/static/css/main.81e7605c.css",
+    "main.js": "/about-me/static/js/main.094a66e0.js",
     "static/js/453.0fbe92db.chunk.js": "/about-me/static/js/453.0fbe92db.chunk.js",
     "static/media/flashing_lights.mp3": "/about-me/static/media/flashing_lights.83195061ea7b2b59077e.mp3",
+    "static/media/emirates.jpeg": "/about-me/static/media/emirates.527eb88f153eefd684ce.jpeg",
     "static/media/cv-felipe.pdf": "/about-me/static/media/cv-felipe.7c8081ef33545dc00f9e.pdf",
     "static/media/yop.jpeg": "/about-me/static/media/yop.0b11997901785fdbc515.jpeg",
     "static/media/Spotify_logo.png": "/about-me/static/media/Spotify_logo.916639c3f332508ba2af.png",
@@ -14,12 +15,12 @@
     "static/media/pdf-logo.png": "/about-me/static/media/pdf-logo.4360a711cab21a8e72b1.png",
     "static/media/linkedin-logo.png": "/about-me/static/media/linkedin-logo.307e13c8dbbdafcf2f96.png",
     "index.html": "/about-me/index.html",
-    "main.33e825e4.css.map": "/about-me/static/css/main.33e825e4.css.map",
-    "main.4c62fdc8.js.map": "/about-me/static/js/main.4c62fdc8.js.map",
+    "main.81e7605c.css.map": "/about-me/static/css/main.81e7605c.css.map",
+    "main.094a66e0.js.map": "/about-me/static/js/main.094a66e0.js.map",
     "453.0fbe92db.chunk.js.map": "/about-me/static/js/453.0fbe92db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33e825e4.css",
-    "static/js/main.4c62fdc8.js"
+    "static/css/main.81e7605c.css",
+    "static/js/main.094a66e0.js"
   ]
 }
